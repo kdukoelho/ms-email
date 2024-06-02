@@ -2,6 +2,7 @@ package rabbit.ms.email.models;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import rabbit.ms.email.dtos.EmailRequestDTO;
 import rabbit.ms.email.enums.EmailStatus;
 
 import java.time.LocalDateTime;
@@ -10,6 +11,15 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "tb_email")
 public class Email{
+
+    public Email(EmailRequestDTO emailRequestDTO){
+        this.ownerRef = emailRequestDTO.getOwnerRef();
+        this.emailFrom = emailRequestDTO.getEmailFrom();
+        this.emailTo = emailRequestDTO.getEmailTo();
+        this.subject = emailRequestDTO.getSubject();
+        this.body = emailRequestDTO.getBody();
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String emailId;
