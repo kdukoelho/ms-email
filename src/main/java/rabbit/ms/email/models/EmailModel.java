@@ -10,9 +10,9 @@ import java.time.LocalDateTime;
 @Data
 @Entity
 @Table(name = "tb_email")
-public class Email{
+public class EmailModel {
 
-    public Email(EmailRequestDTO emailRequestDTO){
+    public EmailModel(EmailRequestDTO emailRequestDTO){
         this.ownerRef = emailRequestDTO.getOwnerRef();
         this.emailFrom = emailRequestDTO.getEmailFrom();
         this.emailTo = emailRequestDTO.getEmailTo();
