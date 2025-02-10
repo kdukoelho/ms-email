@@ -46,10 +46,10 @@ mvn spring-boot:run
 ```json
 {
   "ownerRef": "Carlos",
-  "emailFrom": "ce.figueiredoc@gmail.com",
-  "emailTo": "jobs@ciandt.com",
-  "subject": "CONTRATAÇÃO",
-  "body": "Me contrata :D"
+  "emailFrom": "2@gmail.com",
+  "emailTo": "1@gmail.com",
+  "subject": "Hello",
+  "body": "Hello"
 }
 ```
 **RESPONSE**
@@ -57,10 +57,10 @@ mvn spring-boot:run
 {
   "emailId": "1",
   "ownerRef": "Carlos",
-  "emailFrom": "ce.figueiredoc@gmail.com",
-  "emailTo": "jobs@ciandt.com",
-  "subject": "CONTRATAÇÃO",
-  "body": "Me contrata :D",
+  "emailFrom": "2@gmail.com",
+  "emailTo": "1@gmail.com",
+  "subject": "Hello",
+  "body": "Hello"
   "sentAt": "2024-10-20T14:30:55.008",
   "emailStatus": "SENT",
 }
